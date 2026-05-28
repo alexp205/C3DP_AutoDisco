@@ -1,0 +1,20 @@
+Attached is information relevant to a 3D-Printed Concrete (3DPC) research paper. Specifically, the text of the paper is provided along with a list of 3DPC samples and a row from a data table containing information on the compressive and flexural strengths for one of the samples. I want you to expand on the data for the provided data table row by giving further details on the sample's geometry, printing, and testing conditions. Using the paper text as a reference, expand the manufacturing and experimental details by identifying and extracting the sample's form factor, dimensions, printing setup, and loading test standard details.
+
+Your expanded information for the sample represented in the data table row should be formatted in the following schema:
+Sample Form Factor | Total Sample Width (mm) | Total Sample Depth (mm) | Total Sample Height (mm) | Printed Layer Width (mm) | Printed Layer Height (mm) | Print Speed | Layer Interval (i.e. time between layer deposition) | Compression/Flexural Strength Test Standard
+
+Output the additional data found in a table row following the above schema (i.e. 9 columns filled with values or "none"). Format the table row in comma-separated values (CSV) except use the pipe character '|' as the delimiter. If you could not extact ANY data for whatever reason, do not include any reasoning or extraneous text, simply fill the returned row (all 9 cells) with "none". Furthermore:
+- DO NOT start or end any row of your output table with '|' characters.
+- ensure that your table has entries for ALL columns, if there is nothing to add to a particular cell simply use "none".
+- The row should only have enough cells to match the requisite number of columns (9), DO NOT create additional columns.
+- DO NOT include the schema as the first row of your output table.
+
+Here is the paper text:
+{}
+
+Here is the existing sample data table row:
+{}
+
+Remember you MUST ONLY OUTPUT the table row of 9 cells. Do not output any reasoning.
+
+Table Row:

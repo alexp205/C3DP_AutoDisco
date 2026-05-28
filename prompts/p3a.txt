@@ -1,0 +1,10 @@
+Provided is an image from a 3D-Printed Concrete (3DPC) paper. You are looking for any figure or plot potentially containing **compressive strength** data for a 3DPC sample.
+
+Answer these questions in order:
+1. What is the image depicting?
+2. Is the image of a bar chart or a scatter plot with distinct points? That is, there should not be a curve which you must infer the maximum from.
+3. Does the plot only have one y-axis?
+4. Does the plot depict values for **compressive strength**?
+If the answer to any of these is "no", simply return "none".
+
+Output:

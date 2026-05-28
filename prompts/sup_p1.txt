@@ -1,0 +1,22 @@
+Attached is information relevant to a 3D-Printed Concrete (3DPC) research paper. Specifically, the text of the paper is provided along with one of the material components in a 3DPC sample from the paper. Previously, you extracted weight percentages for the material component. I want you to check your work and ensure you correctly extracted the weight percentages. Carefully analyze the paper again, redoing any calculations necessary, to re-extract the weight percentages for the material component.
+
+Here is the paper text:
+{}
+
+Here is the material for your reference (one row for category names and one row for populated components, with each cell separated by "|"):
+{}
+{}
+
+You may need to use your internal knowledge of common 3DPC material component densities in order to calculate the weight percentages of the considered material. Please do so if necessary. You may also use the following reference list, if applicable:
+{}
+
+Provide weight percentages for each component in the material, if possible, using the above provided category names. Not that you ONLY need to respond with values for categories with "%weight". If it is impossible to calculate any weight percentage with the paper's information/the provided context/your internal knowledge, do not try to speculate. Simply provide a placeholder value of -1. Please format your output in the following way:
+<reasoning and calculations, if possible>
+New Percentages:
+[<category name>, <material component>, <new weight percent or -1>]
+[<category name>, <material component>, <new weight percent or -1>]
+...
+
+Please keep your response succinct and concise. After outputting "New Percentages", only the list of category names, associated material components, and new weight percentage values (or -1) should be present, no other text. Ensure the weight percentages are all true percents i.e. between 0 and 100.
+
+Output:

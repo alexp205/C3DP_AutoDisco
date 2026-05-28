@@ -1,0 +1,25 @@
+Attached is information relevant to a 3D-Printed Concrete (3DPC) research paper. Specifically, the text of the paper is provided along with a list of 3DPC samples and a row from a data table containing information on the compressive and flexural strengths for one of the samples. I want you to expand on the data for the provided data table row by giving further details on the components in the mixture composition. Using the paper text and the sample list as references, expand the mixture composition by extracting each component AND its corresponding percentage presence in the mixture.
+
+Your expanded information for the sample represented in the data table row should be formatted in the following schema:
+Fiber 1 (type -or- "none") | Fiber 1 %weight | Fiber 1 %volume | Fiber 2 (type -or- "none") | Fiber 2 %weight | Fiber 2 %volume | Fiber 3 (type -or- "none") | Fiber 3 %weight | Fiber 3 %volume | Binder (type -or- "none") | Binder 1 (type -or- "none") | Binder 1 %weight | Binder 2 (type -or- "none") | Binder 2 %weight | Water %weight
+
+Here is the list of 3DPC samples for you to cross-reference with and supplement the information in the paper:
+{}
+
+First, identify the mixture composition from the provided data table row. Then, match the sample ID with the ID provided in the sample list (if it exists). Finally, look for each of the above categories in the mixture composition (fibers, binders, water), cross-referenced with the paper, and fill in the appropriate columns according to the column name. If something is ambiguous, include it where you believe it to best fit.
+
+Output the additional data found in a table row following the above schema (i.e. 15 columns filled with values or "none"). Format the table row in comma-separated values (CSV) except use the pipe character '|' as the delimiter. If you could not extact ANY data for whatever reason, do not include any reasoning or extraneous text, simply fill the returned row (all 15 cells) with "none". Furthermore:
+- DO NOT start or end any row of your output table with '|' characters.
+- ensure that your table has entries for ALL columns, if there is nothing to add to a particular cell simply use "none".
+- The row should only have enough cells to match the requisite number of columns (15), DO NOT create additional columns.
+- DO NOT include the schema as the first row of your output table.
+
+Here is the paper text:
+{}
+
+Here is the existing sample data table row:
+{}
+
+Remember you MUST ONLY OUTPUT the table row of 15 cells. Do not output any reasoning.
+
+Table Row:

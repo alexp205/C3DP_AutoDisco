@@ -1,0 +1,93 @@
+accelerator
+banana fiber
+basalt fiber
+bamboo pulp
+carbon fiber
+CMC
+CNC
+CNF
+cotton fiber
+coir fiber
+common clay
+crumb rubber
+ethylene vinyl acetate
+eucalyptus pulp
+flax fiber
+flax shives
+fly ash
+glass fiber
+gypsum
+hemp fiber
+hemp shives
+HPMC
+hydrated lime
+illite/goethite/dolomite
+juncus fiber
+jute fiber
+kaolin
+kenaf fiber
+lime
+limestone
+metakaolin
+nano clay
+PBO fiber
+PE fiber
+perlite
+plasticizer
+potassium silicate
+potato starch
+PP fiber
+PVA fiber
+quartz
+recycled carbon fiber
+recycled waste paper pulp
+retarder
+sand
+silica fume
+sisal fiber
+slag
+sodium hydroxide
+sodium polymethacrylate
+sodium silicate
+soil
+steel fiber
+straw
+type 1 portland cement
+type 2 portland cement
+Weber 3D 115
+water
+aluminum powder
+air entrainer
+borax
+calcium oxide
+calcium silicate
+citric acid
+potassium hydroxide
+surfactant
+VMA
+WRA
+waste glass
+bentonite
+CAC cement
+CSA cement
+MgO
+type 1L portland cement
+type 3 portland cement
+UHPC
+graphene fiber
+rice husk ash
+wood fiber
+kraft pulp
+cenospheres
+PET fiber
+magnesium chloride
+kdp
+sodium chloride
+magnesium alumino silicate
+defoamer
+stabilizer
+iron oxide
+clay ceramsite sand
+sodium chloride
+calcium chloride
+potassium chloride

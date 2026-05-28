@@ -1,0 +1,33 @@
+Attached is the text to a 3D-Printed Concrete (3DPC) research paper. I want you to first carefully analyze the provided 3DPC paper's experimental samples and identify if they are standard or non-standard printed samples based on the below PRINTING CRITERIA. Then, I want you to analyze the compressive and flexural loading setups and identify how well the loading configurations in the paper meet the below detailed LOADING CRITERIA, conditional on the PRINTING CRITERIA. Concisely explain which configurations match which loading criteria most closely, noting any ambiguities. Base your explanation only on what is presented in the paper, not on any comments or elaborations you make. Finally, I want you to carefully analyze the provided 3DPC paper's experimental samples and identify if any in the paper meet the below detailed SAMPLE CRITERIA. If so, list and label each sample for future reference by you in further analysis of the paper. Assign an ID for each sample, i.e. ID<number>.
+
+You will be using this loading direction explanation and sample list as a reference for extracting additional data so ensure that it is descriptive, informative, and comprehensive. You should extract and note any labels the paper provides for particular loading configurations.
+
+**PRINTING CRITERIA**
+The sample should be 3D-printed, not cast or manufactured in any other way. A standard 3D-printed sample should have each layer printed in the same way with material deposited in parallel lines. Non-standard printing directions (e.g. crosshatch, alternating layer deposition patterns or directions, etc.) are acceptable but should be flagged.
+**LOADING CRITERIA**
+You should prioritize certain loading directions for compressive and flexural strength testing of 3DPC samples. Specifically, we care about:
+1) the compressive load applied perpendicular to the top of the printed layers, acting downwards through the printed layers
+- any other compressive load is NOT ACCEPTABLE
+2) [LV I] the flexural load applied perpendicular to the material-deposition direction and to the layer-stacking direction (i.e. as if a load was placed on the side of the beam while the ends of the beam at the edges of the layer-stacking direction were fixed)
+- flexural loading as if placing a load on TOP of the printed layers is NOT ACCEPTABLE
+3) [LV II] the flexural load applied perpendicular to the material-deposition direction and to the layer-stacking direction (i.e. as if a load was placed on the side of the beam while the ends of the beam at the edges of the material-deposition direction were fixed)
+- flexural loading as if placing a load on TOP of the printed layers is NOT ACCEPTABLE
+Note that each of the above criteria is relative to the standard printing specification (described in the PRINTING CRITERIA). If samples in the paper have non-standard printing, INCLUDE THEM even if they may not perfectly meet the above criteria (or would normally qualify for rejection). To verify this, identify the printed layers, per-layer material deposition pattern, material deposition direction (or "printing direction"), and layer-stacking direction for samples in the paper. Then, use these factors to determine if the sample is a standard printed sample. Finally, identify the loading directions for experimental samples. If the loading direction for a sample in the paper is ever unclear or does not cleanly meet the above criteria (whether for inclusion or rejection), then include it in your output. Only reject data if it 1) is a standard printed sample, adn 2) clearly meets one of the rejection loading criteria mentioned.
+**SAMPLE CRITERIA**
+The sample should be some sort of 3D-printed concrete containing any of the following acceptable materials:
+{}
+The sample should have a 28-day cure time (full cement cure time). Any ambiguous samples should be included in your output.
+
+NOTE: If no samples in the paper match the PRINTING CRITERIA but some samples contain materials that overlap with the acceptable materials list in the SAMPLE CRITERIA, then accept the samples in the paper and fill in the below descriptions to the best of your ability. The samples may be useful in evaluating the compositional components that may be used in 3d-printed samples (even if the paper is not explicitly presenting those samples).
+
+Output your findings in the following format:
+"Loading Description:" <descriptive explanation of standard/non-standard printing and loading used in the paper>
+"Sample Reference List:"
+<sample ID 1 | sample ID 1 material composition summary>
+<sample ID 2 | sample ID 2 material composition summary>
+...
+
+Here is the paper text:
+{}
+
+Output:

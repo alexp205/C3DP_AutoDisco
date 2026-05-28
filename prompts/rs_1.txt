@@ -1,0 +1,11 @@
+Attached is the text from a 3D-Printed Concrete (3DPC) paper. I want you to carefully analyze the document and extract any relevant references with high potential for containing additional 3DPC mixtures with compressive and/or flexural strength data.
+
+Please format your output as a list, with each entry following this spec:
+<paper title> | <author list> | <publishing venue>
+
+No other formatting is necessary. Only give the list of entries, each on their own line, and with each line separting values with the '|' character. Do not prepend or add any extra characters per line.
+
+Here is the paper text:
+{}
+
+List:

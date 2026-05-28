@@ -1,0 +1,47 @@
+Attached is the text to a 3D-Printed Concrete (3DPC) research paper. I want you to carefully analyze the provided 3DPC paper text and extract any **flexural strength data**, along with information on the corresponding samples. You should consider the following set of criteria:
+**SAMPLE CRITERIA**
+The sample should be some sort of 3D-printed concrete containing any of the following acceptable materials:
+{}
+The sample should have a 28-day cure time (full cement cure time). Ambiguous samples should be included in your output but flagged in the "Flag - Sample" column with a float value between 0.0 (full clarity on extracted sample) and 1.0 (no evidence supporting the extracted sample). Explain your flag value (if non-zero) in the "Warnings" column.
+**PRINTING CRITERIA**
+The sample should be 3D-printed, not cast or manufactured in any other way. A standard 3D-printed sample should have each layer printed in the same way with material deposited in parallel lines. Non-standard printing directions (e.g. crosshatch, alternating layer deposition patterns or directions, etc.) are should be included in your output but flagged in the "Flag - Printing" column with a float value between 0.0 (clear standard printing) and 1.0 (unknown or unintelligble printing methodology). Explain your flag value (if non-zero) in the "Warnings" column.
+**LOADING CRITERIA**
+You should prioritize certain loading directions for compressive and flexural strength testing of 3DPC samples. Specifically, we care about:
+1) the compressive load applied perpendicular to the top of the printed layers, acting downwards through the printed layers
+- any other compressive load is NOT ACCEPTABLE
+2) [LV I] the flexural load applied perpendicular to the material-deposition direction and to the layer-stacking direction (i.e. as if a load was placed on the side of the beam while the ends of the beam at the edges of the layer-stacking direction were fixed)
+- flexural loading as if placing a load on TOP of the printed layers is NOT ACCEPTABLE
+3) [LV II] the flexural load applied perpendicular to the material-deposition direction and to the layer-stacking direction (i.e. as if a load was placed on the side of the beam while the ends of the beam at the edges of the material-deposition direction were fixed)
+- flexural loading as if placing a load on TOP of the printed layers is NOT ACCEPTABLE
+Note that each of the above criteria is relative to the standard printing specification (described in the PRINTING CRITERIA). If samples in the paper have non-standard printing, INCLUDE THEM even if they may not perfectly meet the above criteria (or would normally qualify for rejection). To verify this, identify the printed layers, per-layer material deposition pattern, material deposition direction (or "printing direction"), and layer-stacking direction for samples in the paper. Then, use these factors to determine if the sample is a standard printed sample. Finally, identify the loading directions for experimental samples. If the loading direction for a sample in the paper is ever unclear or does not cleanly meet the above criteria (whether for inclusion or rejection), then include it in your output but flag it in the "Flag - Loading" column with a float value between 0.0 (loading direction clearly matches) and 1.0 (loading direction is non-standard). Explain your flag value (if non-zero) in the "Warnings" column. Only reject data if it 1) is a standard printed sample, and 2) clearly meets one of the rejection loading criteria mentioned.
+
+Here are some notes about the loading direction in the paper that you should consider:
+{}
+Here is a list of samples you should look for and extract strength values for in the paper:
+{}
+
+Data points that you extract should be formatted in the following schema:
+Paper Title | Mixture Composition Summary | LV I Flexural Strength - Min (MPa) | LV I Flexural Strength - Max (MPa) | LV I Flexural Strength - Average (MPa) | LV II Flexural Strength - Min (MPa) | LV II Flexural Strength - Max (MPa) | LV II Flexural Strength - Average (MPa) | Paper Extraction Location(s) | External Reference (Optional) | Flag - Sample | Flag - Printing | Flag - Loading | Flag - Strength | Warnings
+
+Here are additional details for relevant schema categories:
+- Mixture Composition Summary: use the mixture composition detailed and associated ID (if applicable) from the provided sample list, you may add details or correct the mixture composition if you deem it necessary but ensure the final summary is formatted as the ID and mixture components separated by commas ',' NOT pipe characters '|'
+- Flexural Strength: ensure all units end up in MPa (convert if necessary)
+- Paper Extraction Location(s): denote here where in the paper and from what medium the data sample was extracted from, i.e. page number(s) and text location and/or table number (and any other information if more locations)
+- External Reference: if you suspect the extracted data sample was actually from another paper, include the reference (name or doi) here
+- Flag - Strength: if the extracted strength value(s) is unclear in any way (e.g. the text was ambiguous), indicate it in this column with a float value between 0.0 (value(s) clearly and cleanly extracted) and 1.0 (value(s) not directly extractable). Explain your flag value (if non-zero) in the "Warnings" column
+- Warnings: separate all warnings with commas ',', NOT pipe characters '|'
+- IMPORTANT: if a value does not exist or is not applicable for a category in the schema, simply fill that category with "none"
+- IMPORTANT: only extract data from text or tables here, do not extract data from figures
+
+Output your extracted data points in a table where each row follows the above schema (i.e. 15 columns filled with values or "none"). Format the table in comma-separated values (CSV) except use the pipe character '|' as the delimiter. If you could not extact any data, do not include any reasoning or extraneous text, simply return nothing. Furthermore:
+- DO NOT start or end any row of your output table with '|' characters
+- ensure that your table has entries for ALL columns, if there is nothing to add to a particular cell simply use "none"
+- each row should only have enough cells to match the requisite number of columns (15), DO NOT create additional columns
+- DO NOT include the schema as the first row of your output table
+
+Here is the paper text:
+{}
+
+Remember to ONLY OUTPUT the table. Do not output any reasoning. Don't forget "Warnings" if there are any (use "none" if not).
+
+Table:
