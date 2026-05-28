@@ -43,6 +43,8 @@ if 0 == len(ref_db):
     for data_dir in data_dirs:
         for (root, dirs, files) in os.walk(data_dir, topdown=True):
             for f in files:
+                if ".txt" == f[-4:]:
+                    continue
                 f_id = f[:-4]
                 print(f_id)
                 x_fpath = root + f
@@ -90,6 +92,8 @@ def run():
     for data_dir in data_dirs:
         for (root, dirs, files) in os.walk(data_dir, topdown=True):
             for f in files:
+                if ".txt" == f[-4:]:
+                    continue
                 f_id = f[:-4]
                 print()
                 print(f_id)
